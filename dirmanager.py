@@ -17,7 +17,7 @@ def catch_file_not_found_err(fn):
 
         
 class Storage(ABC):
-    """ Абстрактный класс для создания файлов и дерикторий.
+    """ Абстрактный класс для создания файлов и директорий.
     """
     def __init__(self, path: str, name: str):
         self.path = path
@@ -31,7 +31,6 @@ class Storage(ABC):
 
     @abstractmethod
     def remove(self): ...
-
 
     def __str__(self):
         return str(self.full_path)
